@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="style.css">
+    <body>
+      <script src="scripts.js"></script>
+      <!-- HTML for the flashcard interface -->
+      <div id="flashcard">
+        <!-- Front of the flashcard -->
+        <div class="front">
+          <!-- Displays the chord name -->
+          <h1 id="chord-name"></h1>
+        </div>
+        <!-- Back of the flashcard -->
+        <div class="back">
+          <!-- Displays the component notes of the chord -->
+          <p id="chord-notes"></p>
+        </div>
+      </div>
+
+      <!-- Form to allow the user to choose the number of seconds it takes to flip and switch the flashcards -->
+      <form id="form">
+        <label for="seconds">Number of seconds to flip and switch flashcards:</label><br>
+        <input type="number" id="seconds" name="seconds" min="1" value="1"><br>
+        <input type="button" value="Start" onclick="start()">
+      </form>    
+    </body>
+</html>
